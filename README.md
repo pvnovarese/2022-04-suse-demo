@@ -1,4 +1,4 @@
-# 2022-04-enterprise-demo 
+# 2022-04-suse-demo 
 
 [![Anchore Weekly](https://github.com/pvnovarese/2022-04-suse-demo/actions/workflows/anchore-weekly.yaml/badge.svg)](https://github.com/pvnovarese/2022-04-suse-demo/actions/workflows/anchore-weekly.yaml) [![Anchore Enterprise](https://github.com/pvnovarese/2022-04-suse-demo/actions/workflows/anchore-enterprise.yaml/badge.svg)](https://github.com/pvnovarese/2022-04-suse-demo/actions/workflows/anchore-enterprise.yaml)
 
