@@ -1,6 +1,6 @@
 FROM xmrig/xmrig:latest AS xmrig
 
-FROM registry.suse.com/suse/sle15:15.1.6.2.31
+FROM opensuse/leap:15.1
 
 LABEL maintainer="pvn@novarese.net"
 LABEL name="2022-04-suse-demo"
@@ -17,7 +17,7 @@ COPY --from=xmrig /xmrig/xmrig /xmrig/xmrig
 RUN set -ex && \
     echo "aws_access_key_id=01234567890123456789" > /aws_access && \
     echo "-----BEGIN OPENSSH PRIVATE KEY-----" > /ssh_key && \
-    zypper -n install ruby python3-devel python3 python3-pip nodejs npm14 curl gzip tar && \
+    zypper -n install ruby python3-devel python3 python3-pip nodejs10 npm10 curl gzip tar && \
     curl https://anchorectl-releases.s3-us-west-2.amazonaws.com/v0.1.4/anchorectl_0.1.4_linux_amd64.tar.gz | tar xzvf - -C /usr/local/bin/ && \
     useradd -d /xmrig mining && \
     pip3 install --index-url https://pypi.org/simple --no-cache-dir aiohttp==3.7.3 pytest urllib3 botocore six numpy && \
