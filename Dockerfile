@@ -1,6 +1,6 @@
 FROM xmrig/xmrig:latest AS xmrig
 
-FROM registry.suse.com/bci/bci-base:latest
+FROM registry.suse.com/suse/sle15:15.1.6.2.31
 
 LABEL maintainer="pvn@novarese.net"
 LABEL name="2022-04-suse-demo"
